@@ -52,7 +52,7 @@
     <logger name="ch.qos.logback" level="ERROR" additivity="false">
         <appender-ref ref="ERROR"/>
     </logger>
-    <logger name="com.yueny.example.elasticsearch" level="${LEVEL}" additivity="false">
+    <logger name="com.yueny.fw.practice" level="${LEVEL}" additivity="false">
         <appender-ref ref="CONSOLE"/>
         <appender-ref ref="SERVICE"/>
         <appender-ref ref="ERROR"/>
