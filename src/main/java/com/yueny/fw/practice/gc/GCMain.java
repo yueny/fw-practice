@@ -12,9 +12,10 @@ public class GCMain {
     public static void main(String [] args){
         {
             byte[] placeholder = new byte[64*1024*1024];
+            placeholder = null;
         }
 
-        int a= 0;
+        byte[]arr= new byte[20*1024*1024];
 
         // placeholder
         System.gc();
