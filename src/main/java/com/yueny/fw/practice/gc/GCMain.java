@@ -2,7 +2,7 @@ package com.yueny.fw.practice.gc;
 
 /**
  * <code>
- *
+ *  启动参数增加 -verbose:gc
  * </code>
  *
  * @author yueny09 <deep_blue_yang@163.com>
