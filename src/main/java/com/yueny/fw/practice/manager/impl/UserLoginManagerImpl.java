@@ -28,7 +28,7 @@ public class UserLoginManagerImpl implements IUserLoginManager {
 
 		CarBo bo = service.carToCarDto(entry);
 
-		//log.info("result is :{}.", bo);
+		log.info("result is :{}.", bo);
 
 		return true;
 	}

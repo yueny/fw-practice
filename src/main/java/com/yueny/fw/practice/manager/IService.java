@@ -22,8 +22,7 @@ public interface IService {
 //    IService.INSTANCE
     //public IService INSTANCE = Mappers.getMapper(IService.class);
 
-//    @Mapping(source = "numberOfSeats", target = "seatCount")
-    @Mappings({})
+    @Mapping(source = "numberOfSeats", target = "seatCount")
     CarBo carToCarDto(CarEntry car);
 
 //    public <T extends IBo> void mapper(CarEntry carDto, @MappingTarget T t);

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ImportResource;
 /**
  * Quick start<br>
  * 用于快速启动和关闭job服务
- *
+ *n7li
  * @author yueny09 <deep_blue_yang@163.com>
  * @DATE 2017年3月9日 下午5:53:29
  */
