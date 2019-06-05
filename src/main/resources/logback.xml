@@ -59,6 +59,7 @@
     </logger>
     
     <root level="ROOT">
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="SERVICE"/>
         <appender-ref ref="ERROR"/>
     </root>
