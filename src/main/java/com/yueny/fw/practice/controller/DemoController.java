@@ -24,6 +24,14 @@ public class DemoController {
 	public String bar() {
 		boolean rs = userLoginManager.login("hello");
 
+		// allocate 4M space
+		byte[] b = new byte[4 * 1024 * 1024];
+		System.out.println("first allocate");
+		// allocate 4M space
+		b = new byte[4 * 1024 * 1024];
+		System.out.println("second allocate");
+
+
 		return "welcome:" + rs;
 	}
 
