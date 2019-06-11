@@ -6,6 +6,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
+import java.util.concurrent.Executors;
+
 /**
  * Quick start<br>
  * 用于快速启动和关闭job服务
@@ -23,6 +25,8 @@ public class Bootstrap {
 
 	public static void main(final String[] args) {
 		try {
+			// 将Runable转换成Callable
+			// Executors.callable(null);
 			SpringApplication.run(Bootstrap.class, args);
 		} catch (final Exception e) {
 			logger.error("服务启动异常:", e);
