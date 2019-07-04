@@ -2,7 +2,7 @@
 <configuration scan="true" scanPeriod="30 seconds" debug="false">
     <contextName>asset</contextName>
 
-    <property name="LOG_HOME" value="/Users/yueny/logs/javalog/tomcat/fw"/>
+    <property name="LOG_HOME" value="/data/var/logs/javalog/tomcat/fw"/>
     <property name="DEFAULT_PATTERN"
               value="%d %-5level [%X{ctxTraceId}][%X{ctxEventId}][%thread] %logger{5} - %msg%n"/>
     <property name="LEVEL" value="debug"/>

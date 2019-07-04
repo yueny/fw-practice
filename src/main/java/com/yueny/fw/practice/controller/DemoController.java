@@ -1,10 +1,14 @@
 package com.yueny.fw.practice.controller;
 
 import com.yueny.fw.practice.manager.IUserLoginManager;
+import com.yueny.rapid.lang.agent.UserAgentResource;
+import com.yueny.rapid.lang.agent.handler.UserAgentUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author yueny09 <deep_blue_yang@163.com>
@@ -21,8 +25,10 @@ public class DemoController {
 	 *
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String bar() {
+	public String bar(HttpServletRequest request, UserAgentResource currentUserAgentResource) {
 		boolean rs = userLoginManager.login("hello");
+
+		UserAgentResource userAgent = (UserAgentResource)request.getAttribute("currentUserAgentResource");
 
 //		// allocate 4M space
 //		byte[] b = new byte[4 * 1024 * 1024];

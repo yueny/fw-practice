@@ -5,7 +5,7 @@
 package org.wlt.expression.test;
 
 import junit.framework.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 import org.wlt.expression.ExpressionContext;
 import org.wlt.expression.ExpressionExecutor;
 import org.wlt.expression.ExpressionToken;

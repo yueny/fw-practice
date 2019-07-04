@@ -74,6 +74,11 @@
 			<artifactId>rapid-lang-crypt</artifactId>
 			<version>${yueny.rapid.latest.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.yueny.rapid</groupId>
+			<artifactId>rapid-lang-userAgent</artifactId>
+			<version>${yueny.rapid.latest.version}</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.mapstruct</groupId>
