@@ -27,7 +27,7 @@ public class ThreadIdMain extends AbstractService {
 
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
-            // System.out.println(Thread.currentThread().getId() + "/" + get());
+             System.out.println(Thread.currentThread().getId() + "/" + get());
 
             new Thread(new Runnable() {
                 @Override
