@@ -1,4 +1,4 @@
-package com.yueny.fw.practice.map;
+package com.yueny.fw.practice.map.hashmap;
 
 import java.util.HashMap;
 import java.util.Map;
