@@ -17,18 +17,19 @@ public class TreeNodeHashMap {
 
         //第二阶段， hashCode的值全为 1
         for (int i = 0; i < 10; i++) {
-            map.put(new MapKey(String.valueOf(i)), "A");
+            map.put(new MapKey(String.valueOf(i)), "");
         }
 
         //第三阶段， hashCode的值全为 1
         for (int i = 0; i < 50; i++) {
-            map.put(new MapKey(String.valueOf(i)), "A");
+            map.put(new MapKey(String.valueOf(i)), "C");
         }
 
         //第四阶段， hashCode的值全为 2
-        map.put(new MapKey("Z"), "B");
-        map.put(new MapKey("J"), "B");
-        map.put(new MapKey("F"), "B");
+        map.put(new MapKey("Z"), "D");
+        map.put(new MapKey("J"), "D");
+        map.put(new MapKey("F"), "D");
+
         System.out.println(map);
     }
 
