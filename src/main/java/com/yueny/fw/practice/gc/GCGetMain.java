@@ -7,10 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 写一段程序，让其运行时的表现为触发了5次Young GC、3次Full GC、然后3次Young GC，然后1次FGC，请
- * 给出代码以及启动参数。
+ * 写一段程序，让其运行时的表现为
+ * 触发了5次Young GC、3次Full GC、
+ * 然后3次Young GC，然后1次FGC，
+ * 请给出代码以及启动参数。
  *
- *  VM设置：
+ *  启动参数 VM设置：
  *  -Xms41m -Xmx41m -Xmn10m -XX:+UseParallelGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps
  *
  *  -Xms41m 				堆最小值
@@ -30,12 +32,6 @@ import java.util.List;
  * @Date 2019-10-17 10:54
  */
 public class GCGetMain {
-    /**
-     * 2. 如果一个Java进程突然消失了，你会怎么去排查这种问题？
-     *
-     * 3、 给了一段Spring加载Bean的代码片段，阐述一下具体的执行流程？
-     *
-     */
     /**
      * 最小的单位，1 MB
      */
