@@ -13,6 +13,10 @@ public class Deadlock extends Thread {
     static ReentrantLock south = new ReentrantLock();
     static ReentrantLock north = new ReentrantLock();
 
+    public Deadlock(){
+        //.
+    }
+
     public Deadlock(Object obj){
         this.myDirect = obj;
         if(myDirect==south){
