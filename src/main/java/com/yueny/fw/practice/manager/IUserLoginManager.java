@@ -15,4 +15,13 @@ public interface IUserLoginManager {
 	 */
 	boolean login(String userName);
 
+	default void print(){
+		// 在父类中重写此方法后，如果直接调用接口默认方法，期返回值为接口实现逻辑
+		System.out.println("IUserLoginManager 默认打印");
+	}
+
+	static void blowHorn(){
+		System.out.println("IUserLoginManager 静态!!!");
+	}
+
 }
