@@ -1,6 +1,6 @@
 package com.yueny.fw.practice.finallya;
 
-import com.yueny.fw.practice.AbstractService;
+import com.yueny.fw.service.AbstractService;
 
 /**
  * try...cathch...finally中的 finally 的操作

@@ -1,8 +1,7 @@
-package com.yueny.fw.practice.controller;
+package com.yueny.fw.controller;
 
-import com.yueny.fw.practice.manager.IUserLoginManager;
+import com.yueny.fw.manager.IUserLoginManager;
 import com.yueny.rapid.lang.agent.UserAgentResource;
-import com.yueny.rapid.lang.agent.handler.UserAgentUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;

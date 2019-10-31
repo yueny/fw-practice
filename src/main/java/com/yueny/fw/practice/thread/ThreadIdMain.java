@@ -1,6 +1,6 @@
 package com.yueny.fw.practice.thread;
 
-import com.yueny.fw.practice.AbstractService;
+import com.yueny.fw.service.AbstractService;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

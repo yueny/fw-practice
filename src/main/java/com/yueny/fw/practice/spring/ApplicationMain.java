@@ -1,15 +1,9 @@
 package com.yueny.fw.practice.spring;
 
 import com.yueny.fw.practice.lock.Deadlock;
-import com.yueny.fw.practice.manager.IService;
-import org.slf4j.MDC;
-import org.springframework.aop.framework.ProxyFactoryBean;
-import org.springframework.beans.factory.FactoryBean;
+import com.yueny.fw.manager.IService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
  * @Author yueny09 <deep_blue_yang@126.com>

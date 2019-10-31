@@ -1,14 +1,12 @@
 /**
  *
  */
-package com.yueny.fw.practice.manager.impl;
+package com.yueny.fw.manager.impl;
 
-import com.yueny.fw.practice.entry.CarEntry;
-import com.yueny.fw.practice.entry.CarType;
-import com.yueny.fw.practice.manager.IUserLoginManager;
+import com.yueny.fw.entry.CarEntry;
+import com.yueny.fw.entry.CarType;
+import com.yueny.fw.manager.IUserLoginManager;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeansException;
-import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 

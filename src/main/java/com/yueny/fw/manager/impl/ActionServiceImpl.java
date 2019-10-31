@@ -1,6 +1,6 @@
-package com.yueny.fw.practice.manager.impl;
+package com.yueny.fw.manager.impl;
 
-import com.yueny.fw.practice.manager.IService;
+import com.yueny.fw.manager.IService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

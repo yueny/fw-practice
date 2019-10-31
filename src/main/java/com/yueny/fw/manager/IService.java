@@ -1,4 +1,4 @@
-package com.yueny.fw.practice.manager;
+package com.yueny.fw.manager;
 
 /**
  * <code>

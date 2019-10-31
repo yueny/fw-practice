@@ -5,10 +5,10 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean class="com.yueny.fw.practice.lock.Deadlock"></bean>
-    <bean id="actionService" class="com.yueny.fw.practice.manager.impl.ActionServiceImpl"></bean>
+    <bean id="actionService" class="com.yueny.fw.manager.impl.ActionServiceImpl"></bean>
 
     <bean id="designFactoryBean" class="com.yueny.fw.practice.factorybean.DesignFactoryBean">
-        <property name="interfaceName" value="com.yueny.fw.practice.manager.IService" />
+        <property name="interfaceName" value="com.yueny.fw.manager.IService" />
         <property name="target" ref="actionService" />
     </bean>
 

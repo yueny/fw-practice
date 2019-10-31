@@ -1,4 +1,4 @@
-package com.yueny.fw.practice.entry;
+package com.yueny.fw.entry;
 
 
 /**

@@ -1,11 +1,5 @@
 package com.yueny.fw.practice.threadlocal;
 
-import com.yueny.fw.practice.lock.Deadlock;
-import com.yueny.fw.practice.manager.IService;
-import org.slf4j.MDC;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-10-25 15:10

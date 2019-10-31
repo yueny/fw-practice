@@ -1,4 +1,4 @@
-package com.yueny.fw.practice;
+package com.yueny.fw.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.yueny.fw.practice.manager;
+package com.yueny.fw.manager;
 
 /**
  * @author yueny09 <yueny09@163.com>

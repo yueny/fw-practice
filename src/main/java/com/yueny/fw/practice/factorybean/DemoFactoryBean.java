@@ -1,11 +1,9 @@
 package com.yueny.fw.practice.factorybean;
 
-import com.yueny.fw.practice.bo.CarBo;
-import com.yueny.fw.practice.entry.CarType;
+import com.yueny.fw.bo.CarBo;
+import com.yueny.fw.entry.CarType;
 import lombok.Getter;
 import lombok.Setter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.FactoryBean;
 
 /**

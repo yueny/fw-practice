@@ -1,6 +1,6 @@
-package com.yueny.fw.practice.bo;
+package com.yueny.fw.bo;
 
-import com.yueny.fw.practice.entry.CarType;
+import com.yueny.fw.entry.CarType;
 import com.yueny.superclub.api.pojo.instance.AbstractBo;
 import lombok.Getter;
 import lombok.Setter;
