@@ -1,12 +1,9 @@
 package com.yueny.fw;
 
-import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
-import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
 
 /**
@@ -18,7 +15,6 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ImportResource(locations = { "classpath:/config/spring-properties.xml" })
-@MapperScan("com.yueny.fw.dao")
 public class Bootstrap {
 	/**
 	 * 日志记录器
@@ -37,12 +33,5 @@ public class Bootstrap {
 
 	}
 
-	/**
-	 * 分页插件注册
-	 * @return
-	 */
-	@Bean
-	public PaginationInterceptor paginationInterceptor() {
-		return new PaginationInterceptor();
-	}
+
 }

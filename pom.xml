@@ -24,7 +24,7 @@
 		<org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
 
 		<druid-version>1.1.16</druid-version>
-		<mybatis-plus-version>3.1.1</mybatis-plus-version>
+		<mybatisplus.version>3.2.0</mybatisplus.version>
 	</properties>
 
 	<dependencyManagement>
@@ -46,7 +46,8 @@
 			<artifactId>lombok</artifactId>
 		</dependency>
 
-        <dependency>
+
+		<dependency>
 			<groupId>com.yueny.rapid</groupId>
 			<artifactId>rapid-data-resp</artifactId>
 			<version>${yueny.rapid.latest.version}</version>
@@ -82,7 +83,6 @@
 			<artifactId>rapid-lang-userAgent</artifactId>
 			<version>${yueny.rapid.latest.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.mapstruct</groupId>
 			<artifactId>mapstruct</artifactId>
@@ -154,43 +154,33 @@
 		</dependency>
 
 		<!-- db -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-		</dependency>
-		<!-- druid数据连接池 -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>${druid-version}</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework</groupId>-->
+<!--			<artifactId>spring-jdbc</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>mysql</groupId>-->
+<!--			<artifactId>mysql-connector-java</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.alibaba</groupId>-->
+<!--			<artifactId>druid</artifactId>-->
+<!--		</dependency>-->
 
-		<!-- mybatis plus -->
-		<dependency>
-			<groupId>com.baomidou</groupId>
-			<artifactId>mybatis-plus</artifactId>
-			<version>${mybatis-plus-version}</version>
-			<scope>compile</scope>
-		</dependency>
+		<!-- mybatis && mybatis plus -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
-			<version>${mybatis-plus-version}</version>
+			<version>${mybatisplus.version}</version>
 		</dependency>
+
 		<!-- 动态数据源 -->
-		<dependency>
-			<groupId>com.baomidou</groupId>
-			<artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-			<version>2.5.4</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.baomidou</groupId>-->
+<!--			<artifactId>dynamic-datasource-spring-boot-starter</artifactId>-->
+<!--			<version>2.5.4</version>-->
+<!--		</dependency>-->
+
 
 		<!-- Test -->
 		<dependency>

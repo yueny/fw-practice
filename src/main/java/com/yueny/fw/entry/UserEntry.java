@@ -1,5 +1,6 @@
 package com.yueny.fw.entry;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -12,6 +13,7 @@ import lombok.ToString;
  * @author yueny09 <deep_blue_yang@163.com>
  * @DATE 2019/6/5 下午6:00
  */
+@TableName("user")
 @Getter
 @Setter
 @ToString

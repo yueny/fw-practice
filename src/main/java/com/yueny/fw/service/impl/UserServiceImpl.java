@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yueny.fw.dao.UserMapper;
+import com.yueny.fw.dao.mapper.UserMapper;
 import com.yueny.fw.entry.UserEntry;
 import com.yueny.fw.service.IUserService;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import java.util.List;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-10-31 19:09
  */
-@Service
+//@Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, UserEntry>
         implements IUserService {
     @Override

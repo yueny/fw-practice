@@ -1,4 +1,4 @@
-package com.yueny.fw.dao;
+package com.yueny.fw.dao.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yueny.fw.entry.UserEntry;
