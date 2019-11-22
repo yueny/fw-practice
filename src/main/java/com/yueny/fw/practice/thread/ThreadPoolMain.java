@@ -6,6 +6,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.LongAdder;
 
 /**
  * 线程池
@@ -26,6 +27,9 @@ public class ThreadPoolMain {
     private static final int TERMINATED =  3 << COUNT_BITS;
 
     public static void main(String[] args) {
+        LongAdder adder = new LongAdder();
+        adder.increment();
+
         /**
          * int corePoolSize,
          *                               int maximumPoolSize,
