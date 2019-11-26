@@ -1,4 +1,4 @@
-package com.yueny.fw.practice.design.iterator.single;
+package com.yueny.fw.practice.design.single;
 
 import java.io.Serializable;
 

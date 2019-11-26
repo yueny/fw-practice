@@ -1,4 +1,4 @@
-package com.yueny.fw.practice.design.iterator.single;
+package com.yueny.fw.practice.design.single;
 
 /**
  * 单例模式： 懒汉式， 内部类模式
