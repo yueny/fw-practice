@@ -2,6 +2,7 @@ package com.yueny.fw.practice.files.read;
 
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
+import com.yueny.fw.practice.files.FileMd5Util;
 import com.yueny.fw.practice.files.Salary;
 
 import java.io.BufferedReader;
@@ -74,4 +75,25 @@ public class IOReader {
         return count.sum();
     }
 
+    /**
+     *
+     */
+    public String md5(String filePathName){
+        long begin = System.currentTimeMillis();
+
+        File big = new File(filePathName);
+
+        String md5 = "";
+        try{
+            md5 = FileMd5Util.getFileMD5String(big);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        long end = System.currentTimeMillis();
+        // 2GB 文件的计算大概在 17 s
+        System.out.println("md5:"+md5+" time:"+((end-begin)/1000)+"s");
+
+        return md5;
+    }
 }
