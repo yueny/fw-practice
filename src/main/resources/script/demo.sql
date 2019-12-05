@@ -1,15 +1,16 @@
 DROP TABLE IF EXISTS user;
-
 CREATE TABLE user
 (
     id BIGINT(20) NOT NULL COMMENT '主键ID',
     name VARCHAR(30) NULL DEFAULT NULL COMMENT '姓名',
     age INT(11) NULL DEFAULT NULL COMMENT '年龄',
     email VARCHAR(50) NULL DEFAULT NULL COMMENT '邮箱',
+    `create_time`  timestamp NOT NULL DEFAULT  CURRENT_TIMESTAMP COMMENT '表创建时间',
+    `modify_time`  timestamp NOT NULL DEFAULT  CURRENT_TIMESTAMP  ON UPDATE CURRENT_TIMESTAMP COMMENT '表修改时间',
     PRIMARY KEY (id)
 );
-DELETE FROM user;
 
+DELETE FROM user;
 INSERT INTO user (id, name, age, email) VALUES
 (1, 'Jone', 18, 'test1@baomidou.com'),
 (2, 'Jack', 20, 'test2@baomidou.com'),

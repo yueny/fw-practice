@@ -17,8 +17,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class UserEntry {
-    private Long id;
+public class UserEntry extends AbstractEntry {
     private String name;
     private Integer age;
     private String email;

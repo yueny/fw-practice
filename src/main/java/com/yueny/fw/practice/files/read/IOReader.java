@@ -4,6 +4,7 @@ import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.yueny.fw.practice.files.FileMd5Util;
 import com.yueny.fw.practice.files.Salary;
+import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -19,6 +20,7 @@ import java.util.concurrent.atomic.LongAdder;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-12-04 17:29
  */
+@Component
 public class IOReader {
     /**
      * Java IO读取文件的方式， 1亿条数据耗时31秒
@@ -91,7 +93,7 @@ public class IOReader {
         }
 
         long end = System.currentTimeMillis();
-        // 2GB 文件的计算大概在 17 s
+        // 2GB 文件的计算大概在 18 s
         System.out.println("md5:"+md5+" time:"+((end-begin)/1000)+"s");
 
         return md5;

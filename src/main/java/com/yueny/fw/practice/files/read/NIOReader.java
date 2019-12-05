@@ -3,6 +3,7 @@ package com.yueny.fw.practice.files.read;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
 import com.yueny.fw.practice.files.Salary;
+import org.springframework.stereotype.Component;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,6 +17,7 @@ import java.util.stream.Stream;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-12-04 17:34
  */
+@Component
 public class NIOReader {
     /**
      * JDK8 NIO读取文件， 1亿条数据耗时34秒

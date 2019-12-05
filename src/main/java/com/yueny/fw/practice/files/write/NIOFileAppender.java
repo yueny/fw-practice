@@ -1,6 +1,7 @@
 package com.yueny.fw.practice.files.write;
 
 import com.yueny.fw.practice.files.Salary;
+import org.springframework.stereotype.Component;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,6 +17,7 @@ import java.nio.file.StandardOpenOption;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-12-04 17:00
  */
+@Component
 public class NIOFileAppender {
     /**
      * NIO进行写入
