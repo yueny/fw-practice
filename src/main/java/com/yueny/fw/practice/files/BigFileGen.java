@@ -29,6 +29,8 @@ public class BigFileGen {
 //            reader(filePathName);
 
             ioReader.md5(filePathName);
+
+            System.out.println("finished！");
         }catch (Exception e){
             e.printStackTrace();
         }

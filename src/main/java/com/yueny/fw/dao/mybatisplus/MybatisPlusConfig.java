@@ -60,9 +60,9 @@ public class MybatisPlusConfig {
         /* 数据源 */
         sqlSessionFactory.setDataSource(dataSource);
         /* 枚举扫描路径定义 */
-        sqlSessionFactory.setTypeEnumsPackage("com.aicai.data.enums");
+        sqlSessionFactory.setTypeEnumsPackage("com.yueny.fw.enums");
         // 设置别名包
-        sqlSessionFactory.setTypeAliasesPackage("com.aicai.data.entry");
+        sqlSessionFactory.setTypeAliasesPackage("com.yueny.fw.entry");
 
         /* entity扫描,mybatis的Alias功能 */
         MybatisConfiguration configuration = new MybatisConfiguration();
@@ -83,7 +83,6 @@ public class MybatisPlusConfig {
         sqlSessionFactory.setConfiguration(configuration);
 
         sqlSessionFactory.setGlobalConfig(globalConfig);
-
 
         return sqlSessionFactory.getObject();
     }
