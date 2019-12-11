@@ -7,6 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * DC 参数
+ * -Xloggc:/Users/xiaobai/logs/gc.log  -XX:+UseSerialGC  -XX:+PrintGC  -XX:+PrintGCDetails  -XX:+PrintHeapAtGC
+ * -XX:+PrintGCTimeStamps  -XX:+PrintReferenceGC  -Xms20m  -Xmx20m -Xmn10m -XX:SurvivorRatio=8
+ */
+
+/**
  * 写一段程序，让其运行时的表现为
  * 触发了5次Young GC、3次Full GC、
  * 然后3次Young GC，然后1次FGC，
