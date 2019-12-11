@@ -32,7 +32,8 @@ import javax.sql.DataSource;
 @Configuration
 @MapperScan(basePackages = {"com.yueny.fw.dao.mapper"})
 public class MybatisPlusConfig {
-    private Long mybatisPlusSqlMaxTime = 200L;
+    @Value("${mybatis.plus.sql.maxTime:200}")
+    private Long mybatisPlusSqlMaxTime;
 
     @Autowired
     @Qualifier("dataSource")
@@ -83,6 +84,7 @@ public class MybatisPlusConfig {
         sqlSessionFactory.setConfiguration(configuration);
 
         sqlSessionFactory.setGlobalConfig(globalConfig);
+
 
         return sqlSessionFactory.getObject();
     }

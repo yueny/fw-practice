@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ImportResource;
 
 /**
@@ -13,8 +14,9 @@ import org.springframework.context.annotation.ImportResource;
  * @author yueny09 <deep_blue_yang@163.com>
  * @DATE 2017年3月9日 下午5:53:29
  */
+//@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 @SpringBootApplication
-@ImportResource(locations = { "classpath:/config/spring-properties.xml" })
+//@ImportResource(locations = { "classpath:/config/spring-properties.xml" })
 public class Bootstrap {
 	/**
 	 * 日志记录器
