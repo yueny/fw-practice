@@ -1,5 +1,7 @@
 package com.yueny.fw.practice.design.single;
 
+import com.yueny.fw.practice.design.IDesign;
+
 /**
  * 单例模式： 懒汉式
  *
@@ -9,24 +11,24 @@ package com.yueny.fw.practice.design.single;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-25 10:20
  */
-public class Lazy {
+public class LazySingle implements IDesign {
     private static Object object= new Object();
 
-    private Lazy(){
+    private LazySingle(){
 
     }
 
     // 静态块，公共内存区域
-    private static Lazy lazy = null;
+    private static LazySingle lazy = null;
 
-    public static Lazy getInstance(){
+    public static LazySingle getInstance(){
         // 返回实例之前， 先判断
         // 如果没有初始化，则进行初始化并进行赋值
         // 缓存存储
         if(lazy == null){
             synchronized (object){
                 if(lazy == null){
-                    lazy = new Lazy();
+                    lazy = new LazySingle();
                 }
             }
         }

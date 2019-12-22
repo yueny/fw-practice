@@ -10,10 +10,10 @@ public class LazyHolderTest {
     public static void main(String[] args) {
         try{
             // 第一次。 因为没有被初始化过，所以允许初始化了
-            Object object = LazyHolder.getInstance();
+            Object object = LazyHolderSingle.getInstance();
             System.out.println(object); // sout
 
-            Class<?> clazz = LazyHolder.class;
+            Class<?> clazz = LazyHolderSingle.class;
 
             // 通过反射拿到私有的构造方法
             Constructor c = clazz.getDeclaredConstructor(null);

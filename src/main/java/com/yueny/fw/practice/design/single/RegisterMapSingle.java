@@ -1,5 +1,7 @@
 package com.yueny.fw.practice.design.single;
 
+import com.yueny.fw.practice.design.IDesign;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,24 +13,24 @@ import java.util.Map;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-26 11:24
  */
-public class RegisterMap {
-    private RegisterMap(){}
+public class RegisterMapSingle implements IDesign {
+    private RegisterMapSingle(){}
 
     private static Map<String, Object> register = new HashMap<>();
 
-    public static final RegisterMap getInstance(String name){
+    public static final RegisterMapSingle getInstance(String name){
         if(name == null){
-            name = RegisterMap.class.getName();
+            name = RegisterMapSingle.class.getName();
         }
 
         if(register.get(name) == null){
             try{
-                register.put(name, new RegisterMap());
+                register.put(name, new RegisterMapSingle());
             }catch (Exception e){
                 e.printStackTrace();
             }
         }
 
-        return (RegisterMap) register.get(name);
+        return (RegisterMapSingle) register.get(name);
     }
 }

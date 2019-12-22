@@ -18,7 +18,7 @@ public class ThreadSafeTest {
 
         CountDownLatch latch = new CountDownLatch(countr);
 
-        final Set<Hungry> syncSet = Collections.synchronizedSet(new HashSet<>());
+        final Set<HungrySingle> syncSet = Collections.synchronizedSet(new HashSet<>());
 
         for(int i=0; i<countr; i++){
             new Thread(){
@@ -26,9 +26,9 @@ public class ThreadSafeTest {
                 public void run() {
                     super.run();
 
-//                    syncSet.add(Hungry.getInstance());
-                    Hungry hungry = Hungry.getInstance();
-                    System.out.println(System.currentTimeMillis() + ":" + hungry);
+//                    syncSet.add(HungrySingle.getInstance());
+                    HungrySingle hungrySingle = HungrySingle.getInstance();
+                    System.out.println(System.currentTimeMillis() + ":" + hungrySingle);
 
                     latch.countDown();
                 }

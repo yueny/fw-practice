@@ -8,6 +8,8 @@ package com.yueny.fw.practice.design.single;
  * Listener本身单例，日历Calender, IOC容器，配置Config信息
  */
 
+import com.yueny.fw.practice.design.IDesign;
+
 /**
  * 单例模式： 饿汉式
  *
@@ -25,14 +27,14 @@ package com.yueny.fw.practice.design.single;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-25 10:10
  */
-public class Hungry {
-    private Hungry(){
+public class HungrySingle implements IDesign {
+    private HungrySingle(){
 
     }
 
-    private static final Hungry hungry = new Hungry();
+    private static final HungrySingle HUNGRY_SINGLE = new HungrySingle();
 
-    public static Hungry getInstance(){
-        return hungry;
+    public static HungrySingle getInstance(){
+        return HUNGRY_SINGLE;
     }
 }

@@ -1,5 +1,7 @@
 package com.yueny.fw.practice.design.iterator.core;
 
+import com.yueny.fw.practice.design.IDesign;
+
 /**
  * 迭代器设计模式
  *
@@ -8,7 +10,7 @@ package com.yueny.fw.practice.design.iterator.core;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-10-16 14:00
  */
-public interface Iterator<E> {
+public interface Iterator<E> extends IDesign {
     /**
      * 返回该迭代器中是否还有未遍历过的元素
      *

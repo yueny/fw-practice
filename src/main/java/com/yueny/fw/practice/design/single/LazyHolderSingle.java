@@ -1,5 +1,7 @@
 package com.yueny.fw.practice.design.single;
 
+import com.yueny.fw.practice.design.IDesign;
+
 /**
  * 单例模式： 懒汉式， 内部类模式
  *
@@ -12,13 +14,13 @@ package com.yueny.fw.practice.design.single;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-25 10:20
  */
-public class LazyHolder {
+public class LazyHolderSingle implements IDesign {
     // 该值可能会被反射改变值。 TODO
     private static  boolean initialized = false;
 
-    private LazyHolder(){
+    private LazyHolderSingle(){
         // 防止反射入侵。构造方法只会被实例化一次
-        synchronized (LazyHolder.class){
+        synchronized (LazyHolderSingle.class){
             if(initialized == false){
                 initialized = !initialized;
             }else{
@@ -29,7 +31,7 @@ public class LazyHolder {
 
     // static 为了使单例的空间共享
     // final 不允许被重写
-    public static final LazyHolder getInstance(){
+    public static final LazyHolderSingle getInstance(){
         //  再返回结果以前，一定会先加载内部类，然后再返回
         return LazyHolderIn.LAZY;
     }
@@ -38,6 +40,6 @@ public class LazyHolder {
     // static 只会被初始化一次
     private static class LazyHolderIn{
         // 静态块，公共内存区域
-        private static final LazyHolder LAZY = new LazyHolder();
+        private static final LazyHolderSingle LAZY = new LazyHolderSingle();
     }
 }
