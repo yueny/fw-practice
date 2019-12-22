@@ -1,6 +1,5 @@
 package com.yueny.fw.practice.design.single;
 
-import com.yueny.fw.practice.design.IDesign;
 
 /**
  * 单例模式： 懒汉式， 内部类模式
@@ -14,7 +13,7 @@ import com.yueny.fw.practice.design.IDesign;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-25 10:20
  */
-public class LazyHolderSingle implements IDesign {
+public class LazyHolderSingle implements ISingle {
     // 该值可能会被反射改变值。 TODO
     private static  boolean initialized = false;
 

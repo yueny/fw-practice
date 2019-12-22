@@ -1,6 +1,5 @@
 package com.yueny.fw.practice.design.single;
 
-import com.yueny.fw.practice.design.IDesign;
 
 /**
  * 单例模式： 懒汉式
@@ -11,7 +10,7 @@ import com.yueny.fw.practice.design.IDesign;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-25 10:20
  */
-public class LazySingle implements IDesign {
+public class LazySingle implements ISingle {
     private static Object object= new Object();
 
     private LazySingle(){

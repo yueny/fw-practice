@@ -1,6 +1,5 @@
 package com.yueny.fw.practice.design.single;
 
-import com.yueny.fw.practice.design.IDesign;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +12,7 @@ import java.util.Map;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-26 11:24
  */
-public class RegisterMapSingle implements IDesign {
+public class RegisterMapSingle implements ISingle {
     private RegisterMapSingle(){}
 
     private static Map<String, Object> register = new HashMap<>();

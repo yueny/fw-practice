@@ -8,7 +8,6 @@ package com.yueny.fw.practice.design.single;
  * Listener本身单例，日历Calender, IOC容器，配置Config信息
  */
 
-import com.yueny.fw.practice.design.IDesign;
 
 /**
  * 单例模式： 饿汉式
@@ -27,7 +26,7 @@ import com.yueny.fw.practice.design.IDesign;
  * @Author yueny09 <deep_blue_yang@126.com>
  * @Date 2019-11-25 10:10
  */
-public class HungrySingle implements IDesign {
+public class HungrySingle implements ISingle {
     private HungrySingle(){
 
     }
