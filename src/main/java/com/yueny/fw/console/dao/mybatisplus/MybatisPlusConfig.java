@@ -1,4 +1,4 @@
-package com.yueny.fw.dao.mybatisplus;
+package com.yueny.fw.console.dao.mybatisplus;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.MybatisConfiguration;
@@ -6,9 +6,9 @@ import com.baomidou.mybatisplus.core.config.GlobalConfig;
 import com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
-import com.yueny.fw.dao.mybatisplus.handler.MysqlMetaObjectHandler;
-import com.yueny.fw.dao.mybatisplus.interceptor.IgnoreCreateDateFieldInterceptor;
-import com.yueny.fw.dao.mybatisplus.interceptor.PerformanceInterceptorX;
+import com.yueny.fw.console.dao.mybatisplus.handler.MysqlMetaObjectHandler;
+import com.yueny.fw.console.dao.mybatisplus.interceptor.IgnoreCreateDateFieldInterceptor;
+import com.yueny.fw.console.dao.mybatisplus.interceptor.PerformanceInterceptorX;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.type.JdbcType;
@@ -30,7 +30,7 @@ import javax.sql.DataSource;
  *
  */
 @Configuration
-@MapperScan(basePackages = {"com.yueny.fw.dao.mapper"})
+@MapperScan(basePackages = {"com.yueny.fw.console.dao.mapper"})
 public class MybatisPlusConfig {
     @Value("${mybatis.plus.sql.maxTime:200}")
     private Long mybatisPlusSqlMaxTime;
@@ -63,7 +63,7 @@ public class MybatisPlusConfig {
         /* 枚举扫描路径定义 */
         sqlSessionFactory.setTypeEnumsPackage("com.yueny.fw.enums");
         // 设置别名包
-        sqlSessionFactory.setTypeAliasesPackage("com.yueny.fw.entry");
+        sqlSessionFactory.setTypeAliasesPackage("com.yueny.fw.console.entry");
 
         /* entity扫描,mybatis的Alias功能 */
         MybatisConfiguration configuration = new MybatisConfiguration();

@@ -1,6 +1,6 @@
 package com.yueny.fw.practice.thread;
 
-import com.yueny.fw.service.AbstractService;
+import com.yueny.fw.console.service.AbstractService;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadInfo;

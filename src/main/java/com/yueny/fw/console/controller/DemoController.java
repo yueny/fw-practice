@@ -1,4 +1,4 @@
-package com.yueny.fw.controller;
+package com.yueny.fw.console.controller;
 
 import com.yueny.fw.manager.IUserLoginManager;
 import com.yueny.fw.practice.files.read.IOReader;

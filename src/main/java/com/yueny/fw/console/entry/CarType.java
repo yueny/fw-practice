@@ -1,4 +1,4 @@
-package com.yueny.fw.entry;
+package com.yueny.fw.console.entry;
 
 
 /**

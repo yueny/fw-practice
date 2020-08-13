@@ -1,8 +1,8 @@
-package com.yueny.fw.service;
+package com.yueny.fw.console.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yueny.fw.entry.UserEntry;
+import com.yueny.fw.console.entry.UserEntry;
 
 import java.util.List;
 

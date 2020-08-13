@@ -1,7 +1,7 @@
-package com.yueny.fw.dao.mapper;
+package com.yueny.fw.console.dao.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.yueny.fw.entry.UserEntry;
+import com.yueny.fw.console.entry.UserEntry;
 
 /**
  * @Author yueny09 <deep_blue_yang@126.com>

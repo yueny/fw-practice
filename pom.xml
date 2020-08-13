@@ -17,7 +17,7 @@
 	
 	<properties>
 		<java.version>1.8</java.version>
-		<apollo.version>1.3.0</apollo.version>
+		<!--<apollo.version>1.3.0</apollo.version>-->
 
 		<!--
 		https://www.cnblogs.com/badtree/articles/9145493.html
@@ -107,11 +107,11 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.ctrip.framework.apollo</groupId>
-			<artifactId>apollo-client</artifactId>
-			<version>${apollo.version}</version>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>com.ctrip.framework.apollo</groupId>-->
+			<!--<artifactId>apollo-client</artifactId>-->
+			<!--<version>${apollo.version}</version>-->
+		<!--</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

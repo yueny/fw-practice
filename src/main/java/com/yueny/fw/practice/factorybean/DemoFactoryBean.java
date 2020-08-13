@@ -1,7 +1,7 @@
 package com.yueny.fw.practice.factorybean;
 
-import com.yueny.fw.bo.CarBo;
-import com.yueny.fw.entry.CarType;
+import com.yueny.fw.console.bo.CarBo;
+import com.yueny.fw.console.entry.CarType;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.factory.FactoryBean;

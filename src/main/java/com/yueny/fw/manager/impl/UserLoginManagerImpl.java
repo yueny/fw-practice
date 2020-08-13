@@ -3,14 +3,11 @@
  */
 package com.yueny.fw.manager.impl;
 
-import com.yueny.fw.entry.CarEntry;
-import com.yueny.fw.entry.CarType;
+import com.yueny.fw.console.entry.CarEntry;
+import com.yueny.fw.console.entry.CarType;
 import com.yueny.fw.manager.IUserLoginManager;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import java.time.temporal.ChronoUnit;
-
 
 @Slf4j
 @Service

@@ -1,4 +1,4 @@
-package com.yueny.fw.dao.mybatisplus.interceptor;
+package com.yueny.fw.console.dao.mybatisplus.interceptor;
 
 import com.baomidou.mybatisplus.core.toolkit.*;
 import lombok.Getter;

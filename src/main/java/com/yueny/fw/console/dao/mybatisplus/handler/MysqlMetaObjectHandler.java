@@ -1,4 +1,4 @@
-package com.yueny.fw.dao.mybatisplus.handler;
+package com.yueny.fw.console.dao.mybatisplus.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;

@@ -2,30 +2,35 @@
 <configuration scan="true" scanPeriod="3000">
     <contextName>asset</contextName>
 
-    <!--
-    <property name="LOG_HOME" value="/data/var/logs/javalog/template/mybatisplus"/>
-    <property name="DEFAULT_PATTERN"
-              value="%d %-5level [%X{ctxTraceId}][%X{ctxEventId}][%thread] %logger{5} - %msg%n"/>
 
-    <property name="LEVEL" value="debug"/>
-    <property name="LOG_FILE_EXPIRE_TIME" value="180"/>
-    -->
-    <property name="CHARSET" value="UTF-8"/>
-
-    <!--读取配置中心的属性-->
+    <!--读取配置中心的属性
     <springProperty scope="context" name="LOG_HOME" source="logback.data.home"
                     defaultValue="logs/template/mybatisplus"></springProperty>
     <springProperty scope="context" name="DEFAULT_PATTERN" source="logback.data.default.pattern"></springProperty>
-    <springProperty scope="context" name="CONSOLE_PATTERN" source="logback.data.console.pattern"></springProperty>
     <springProperty scope="context" name="LEVEL" source="logging.level.root"></springProperty>
+
+    <springProperty scope="context" name="CONSOLE_PATTERN" source="logback.data.console.pattern"></springProperty>
     <springProperty scope="context" name="LOG_FILE_EXPIRE_TIME" source="logback.data.file.expireTime"></springProperty>
+    -->
+
+    <!-- 本地固定配置  -->
+    <property name="LOG_HOME" value="/Users/yueny/var/logs/javalog/template/mybatisplus"/>
+    <property name="DEFAULT_PATTERN"
+              value="%d %-5level [%X{ctxTraceId}][%X{ctxEventId}][%thread] %logger{5} - %msg%n"/>
+    <property name="LEVEL" value="debug"/>
+
+
+    <property name="CHARSET" value="UTF-8"/>
+    <property name="SSL" value="true" />
+
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>${LEVEL}</level>
         </filter>
         <encoder>
-            <pattern>${CONSOLE_PATTERN}</pattern>
+            <pattern>[%-5level] %date{HH:mm:ss.SSS} [%X{ctxTraceId}][%X{ctxEventId}][%thread] %logger{36} - %msg%n
+            </pattern>
         </encoder>
     </appender>
 
@@ -36,7 +41,7 @@
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${LOG_HOME}/%d{yyyyMMdd}/error.log</fileNamePattern>
-            <maxHistory>${LOG_FILE_EXPIRE_TIME}</maxHistory>
+            <maxHistory>30</maxHistory>
             <cleanHistoryOnStart>true</cleanHistoryOnStart>
         </rollingPolicy>
         <encoder>
@@ -49,7 +54,7 @@
         <file>${LOG_HOME}/service.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${LOG_HOME}/%d{yyyyMMdd}/service.log</fileNamePattern>
-            <maxHistory>${LOG_FILE_EXPIRE_TIME}</maxHistory>
+            <maxHistory>30</maxHistory>
             <cleanHistoryOnStart>true</cleanHistoryOnStart>
         </rollingPolicy>
         <encoder>
@@ -57,6 +62,22 @@
             <charset>${CHARSET}</charset>
         </encoder>
     </appender>
+
+
+    <logger name="ch.qos.logback" level="ERROR" additivity="false">
+        <appender-ref ref="ERROR"/>
+    </logger>
+    <logger name="com.yueny.fw" level="${LEVEL}" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="SERVICE"/>
+        <appender-ref ref="ERROR"/>
+    </logger>
+
+    <root level="ROOT">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="SERVICE"/>
+        <appender-ref ref="ERROR"/>
+    </root>
 
     <!--
     <logger>用来设置某一个包或者具体的某一个类的日志打印级别、
@@ -75,10 +96,5 @@
         不能设置为INHERITED或者同义词NULL。默认是DEBUG
         可以包含零个或多个元素，标识这个appender将会添加到这个logger。
     -->
-    <root level="${LEVEL}">
-        <appender-ref ref="CONSOLE"/>
-        <appender-ref ref="SERVICE"/>
-        <appender-ref ref="ERROR"/>
-    </root>
 
 </configuration>

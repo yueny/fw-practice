@@ -1,13 +1,13 @@
-package com.yueny.fw.service.impl;
+package com.yueny.fw.console.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.yueny.fw.dao.mapper.UserMapper;
-import com.yueny.fw.entry.UserEntry;
-import com.yueny.fw.service.IUserService;
+import com.yueny.fw.console.dao.mapper.UserMapper;
+import com.yueny.fw.console.entry.UserEntry;
+import com.yueny.fw.console.service.IUserService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

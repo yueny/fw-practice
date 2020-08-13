@@ -24,6 +24,8 @@ public class Bootstrap {
 			// 将Runable转换成Callable
 			// Executors.callable(null);
 			SpringApplication.run(Bootstrap.class, args);
+
+			logger.info("success!");
 		} catch (final Exception e) {
 			logger.error("服务启动异常:", e);
 			e.printStackTrace();
