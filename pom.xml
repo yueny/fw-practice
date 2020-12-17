@@ -5,10 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.yueny</groupId>
+		<groupId>com.whosly</groupId>
 		<artifactId>yueny-parent</artifactId>
-		<version>1.1.6-RELEASE</version>
+		<version>1.3.0-RELEASE</version>
 	</parent>
+<!--	<parent>-->
+<!--		<groupId>com.yueny</groupId>-->
+<!--		<artifactId>yueny-parent</artifactId>-->
+<!--		<version>1.1.6-RELEASE</version>-->
+<!--	</parent>-->
     
     <groupId>com.yueny.example</groupId>
     <artifactId>fw-practice</artifactId>
@@ -38,7 +43,7 @@
 		<druid-version>1.1.16</druid-version>
 		<mybatisplus.version>3.2.0</mybatisplus.version>
 
-		<yueny.rapid.latest.version>1.0.1-SNAPSHOT</yueny.rapid.latest.version>
+		<yueny.rapid.latest.version>1.0.1-RELEASE</yueny.rapid.latest.version>
 	</properties>
 
 	<dependencyManagement>
@@ -138,6 +143,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 			<version>1.5.17.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
